@@ -1,0 +1,28 @@
+Creating an Update Loop
+=============
+
+You probably noticed that your bird only goes up and down, not to the right like
+it should.
+
+For this sort of logic, games typically use an "update loop." What happens is that some
+code is run really fast - up to 60 times per second! That code usually checks things like
+player health, whether enemies have died, and allows you to program actions that repeat constantly, like moving our bird to the right!
+
+In order to create an update loop, you need to add a new method. Below the
+closing bracket of your ```tap``` method, but before the ```@end```,
+add the following:
+
+<div class="code-editor-ex">- (void)update:(CCTime)delta
+{
+    // this will be run every frame.
+    // delta is the time that has elapsed since the last time it was run.
+}</div>
+
+Making the Character Move
+=============
+
+In your update method, add the following:
+
+<div class="code-editor-ex">    [character move];</div>
+
+Now run the game again. You should see the character moving now!
