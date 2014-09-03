@@ -17,16 +17,16 @@ For your game to respond to input, we have to write a new method to be run whene
 the player taps the screen. Add the following after the closing bracket of the init method
 but before the ```@end```:
 
-  - (void)tap
-  {
-      // this will get called every time the player
-      // taps the screen.
-  }
+    - (void)tap
+    {
+        // this will get called every time the player
+        // taps the screen.
+    }
 
 Now that we have code that is run every time the player taps the screen, we want to make
 the bird flap. Inside your ```tap```
 method, add the following code:
 
-  [character flap];
+    [character flap];
 
 Now run the game again. This time, try to tap on the screen to see the bird flap!

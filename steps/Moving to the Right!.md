@@ -12,11 +12,11 @@ In order to create an update loop, you need to add a new method. Below the
 closing bracket of your ```tap``` method, but before the ```@end```,
 add the following:
 
-  - (void)update:(CCTime)delta
-  {
-      // this will be run every frame.
-      // delta is the time that has elapsed since the last time it was run.
-  }
+    - (void)update:(CCTime)delta
+    {
+        // this will be run every frame.
+        // delta is the time that has elapsed since the last time it was run.
+    }
 
 Making the Character Move
 =============

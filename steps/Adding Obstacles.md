@@ -7,7 +7,7 @@ for you to avoid!
 For that we have created a simple method for you: ```addObstacle``` To use it, in your ```initialize```
 method, simply add:
 
-  [self addObstacle];
+    [self addObstacle];
 
 Then run the game. You should see a random obstacle appear!
 
@@ -18,7 +18,7 @@ Now that we have one obstacle, lets add more! In your ```initialize``` method,
 right after your previous ```[self addObstacle];```,
 initialize the ```timeSinceObstacle``` variable like so:
 
-  timeSinceObstacle = 0;
+    timeSinceObstacle = 0;
 
 What we want to do is add a new obstacle at some regular interval.
 This time in your ```update``` method, try adding:
@@ -30,7 +30,7 @@ This time in your ```update``` method, try adding:
     // Check to see if two seconds have passed
     if (timeSinceObstacle > 2)
     {
-      // Add a new obstacle
+        // Add a new obstacle
         [self addObstacle];
 
         // Then reset the timer.
