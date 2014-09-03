@@ -7,11 +7,11 @@ between the character and an obstacle. Like we did for touches, we need another 
 Add the following below the closing bracket of your ```update``` method,
 but before the ```@end```:
 
-<div class="code-editor-ex">-(void) collisionWithObstacle
-{
-    //this gets called when the bird collides with an obstacle
-    [self gameOver];
-}</div>
+  -(void) collisionWithObstacle
+  {
+      //this gets called when the bird collides with an obstacle
+      [self gameOver];
+  }
 
 Keeping Score
 =============
@@ -20,18 +20,18 @@ The last thing that we need to do is keep score. To do that, we first need to
 create and display the score counter. Before the closing bracket of your
 ```initialize``` method, add the following:
 
-<div class="code-editor-ex">    [self showScore];</div>
+  [self showScore];
 
 If you play the game now, you will notice that a 0 is displayed, but
 your points don't increase. We will need a new method for that. After
 the closing bracket of your ```collisionWithObstacle``` method,
 but before the ```@end```:
 
-<div class="code-editor-ex">-(void) passedObstacle
-{
-    // Update the score
-    [self increaseScore];
-}</div>
+  -(void) passedObstacle
+  {
+      // Update the score
+      [self increaseScore];
+  }
 
 Run the game again and you should see your finished Flappy Bird game! Congratulations - you've
 built your first iPhone game!

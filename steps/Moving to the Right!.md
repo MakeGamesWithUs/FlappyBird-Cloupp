@@ -12,17 +12,17 @@ In order to create an update loop, you need to add a new method. Below the
 closing bracket of your ```tap``` method, but before the ```@end```,
 add the following:
 
-<div class="code-editor-ex">- (void)update:(CCTime)delta
-{
-    // this will be run every frame.
-    // delta is the time that has elapsed since the last time it was run.
-}</div>
+  - (void)update:(CCTime)delta
+  {
+      // this will be run every frame.
+      // delta is the time that has elapsed since the last time it was run.
+  }
 
 Making the Character Move
 =============
 
 In your update method, add the following:
 
-<div class="code-editor-ex">    [character move];</div>
+  [character move];
 
 Now run the game again. You should see the character moving now!
