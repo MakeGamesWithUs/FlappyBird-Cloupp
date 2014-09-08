@@ -23,6 +23,6 @@ Making the Character Move
 
 In your update method, add the following:
 
-  [character move];
+    [character move];
 
 Now run the game again. You should see the character moving now!
