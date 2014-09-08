@@ -134,15 +134,8 @@
         character.physicsBody.angularVelocity = angularVelocity;
     }
     
-    @try
-    {
-        if ((_sinceTouch > 0.5f)) {
-            [character.physicsBody applyAngularImpulse:-40000.f*delta];
-        }
-    }
-    @catch(NSException* ex)
-    {
-        
+    if ((_sinceTouch > 0.5f) && character.physicsNode) {
+        [character.physicsBody applyAngularImpulse:-40000.f*delta];
     }
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
@@ -208,7 +201,7 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
     [goal removeFromParent];
-
+    
     @try {
         [super passedObstacle];
     }
