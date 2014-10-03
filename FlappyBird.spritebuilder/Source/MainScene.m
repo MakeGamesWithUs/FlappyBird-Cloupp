@@ -186,7 +186,7 @@
         @try
         {
             character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
-            
+
             [super update:delta];
         }
         @catch(NSException* ex)

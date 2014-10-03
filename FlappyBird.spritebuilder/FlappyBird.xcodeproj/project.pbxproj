@@ -62,6 +62,8 @@
 		BEC40D0219D9E21E00ACDA8F /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF66F7B19563563004691FD /* Obstacle.m */; };
 		BEC40D0319D9E3E700ACDA8F /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40CE719D9E11600ACDA8F /* libcocos2d.a */; };
 		BEC40D1819D9E97100ACDA8F /* MSCaptureGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D1719D9E97100ACDA8F /* MSCaptureGLView.m */; };
+		BED8294B19DF04B300014654 /* TutorialScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8294A19DF04B300014654 /* TutorialScene.m */; };
+		BED8294E19DF04BA00014654 /* TutorialScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8294A19DF04B300014654 /* TutorialScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,8 @@
 		BEC40CFB19D9E19A00ACDA8F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		BEC40D1619D9E97100ACDA8F /* MSCaptureGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCaptureGLView.h; sourceTree = "<group>"; };
 		BEC40D1719D9E97100ACDA8F /* MSCaptureGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCaptureGLView.m; sourceTree = "<group>"; };
+		BED8294919DF04B300014654 /* TutorialScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialScene.h; path = Source/TutorialScene.h; sourceTree = "<group>"; };
+		BED8294A19DF04B300014654 /* TutorialScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialScene.m; path = Source/TutorialScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,8 @@
 				BCF66F7B19563563004691FD /* Obstacle.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				BED8294919DF04B300014654 /* TutorialScene.h */,
+				BED8294A19DF04B300014654 /* TutorialScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -586,6 +592,7 @@
 				BCF66F7D19563563004691FD /* GamePlayScene.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				BED8294E19DF04BA00014654 /* TutorialScene.m in Sources */,
 				BCF66F8019563563004691FD /* Obstacle.m in Sources */,
 				BCF66F7C19563563004691FD /* Character.m in Sources */,
 				BCF66F7F19563563004691FD /* MainScene.m in Sources */,
@@ -602,6 +609,7 @@
 				BEC40CC619D9E0E800ACDA8F /* AppDelegate.m in Sources */,
 				BEC40D0219D9E21E00ACDA8F /* Obstacle.m in Sources */,
 				BEC40CFE19D9E21E00ACDA8F /* Character.m in Sources */,
+				BED8294B19DF04B300014654 /* TutorialScene.m in Sources */,
 				BEC40D1819D9E97100ACDA8F /* MSCaptureGLView.m in Sources */,
 				BEC40D0119D9E21E00ACDA8F /* MainScene.m in Sources */,
 			);
