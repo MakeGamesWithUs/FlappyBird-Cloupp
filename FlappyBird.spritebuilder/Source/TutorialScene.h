@@ -10,4 +10,5 @@
 
 @interface TutorialScene : CCNode <CCPhysicsCollisionDelegate>
 -(void)update:(CCTime)delta;
+-(void) tap;
 @end
