@@ -20,4 +20,14 @@
     
 }
 
+-(void) collisionWithObstacle
+{
+    
+}
+
+-(void) passedObstacle
+{
+    
+}
+
 @end

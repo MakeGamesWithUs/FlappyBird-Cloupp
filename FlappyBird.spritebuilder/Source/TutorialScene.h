@@ -11,4 +11,6 @@
 @interface TutorialScene : CCNode <CCPhysicsCollisionDelegate>
 -(void)update:(CCTime)delta;
 -(void) tap;
+-(void) collisionWithObstacle;
+-(void) passedObstacle;
 @end
