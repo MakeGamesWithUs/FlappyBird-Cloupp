@@ -67,16 +67,20 @@
 
 - (void)touchBegan {
     if (!_gameOver) {
-        [character.physicsBody applyAngularImpulse:10000.f];
-        _sinceTouch = 0.f;
-        
+      
         @try
         {
             [super tap];
         }
         @catch(NSException* ex)
         {
-            
+          
+        }
+        
+        // keeps flappy from rotating before touchBegan is implemented
+        if (character.physicsBody.velocity.y > 0) {
+            [character.physicsBody applyAngularImpulse:10000.f];
+            _sinceTouch = 0.f;
         }
     }
 }
